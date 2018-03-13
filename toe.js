@@ -11,3 +11,8 @@ var b3 = document.querySelector('#b3');
 var c1 = document.querySelector('#c1');
 var c2 = document.querySelector('#c2');
 var c3 = document.querySelector('#c3');
+console.log(oButton); 
+$ (function () {
+  $(xButton).draggable();
+  $(oButton).draggable();
+});
