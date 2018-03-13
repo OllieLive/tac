@@ -2,34 +2,59 @@
     margin: 25px 40px;
     padding: 40px;
     border: 25px;
+    position: relative;
 }
-
-.xButton {
+/* .xButton{
     margin-left: 40px;
     padding: 20px;
 }
-
-.oButton {
+.oButton{
     margin-left: 40px;
     padding: 10px;
-}
-
-.ticTable {
+} */
+.ticTable{
     margin-top: 25px;
     margin-left: 180px;
 }
-
 .line {
     font-size: 130px;
-    image-orientation: unset;
+    /* image-orientation: unset; */
 }
 
 .lGrid {
     border-left: 6px solid blue;
     height: 50px;
 }
-
-.hGrid {
+.hGrid{
     border-bottom: 6px solid red;
     width: 50px;
+}
+.token {
+    font-size: 130px;
+    font-family: 'Poppins', sans-serif;
+    color: red;
+}
+.o {
+    position: absolute;
+    left: 0%;
+}
+.x {
+    position: absolute;
+    left: 90%;
+}
+
+.playerone {
+    position: absolute;
+    top: 170%;
+    left: 0%;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.playertwo{
+    position: absolute;
+    top: 170%;
+    left: 87%;
+    font-family: 'Poppins', sans-serif;
+
 }
