@@ -1,0 +1,35 @@
+.sideImage {
+    margin: 25px 40px;
+    padding: 40px;
+    border: 25px;
+}
+
+.xButton {
+    margin-left: 40px;
+    padding: 20px;
+}
+
+.oButton {
+    margin-left: 40px;
+    padding: 10px;
+}
+
+.ticTable {
+    margin-top: 25px;
+    margin-left: 180px;
+}
+
+.line {
+    font-size: 130px;
+    image-orientation: unset;
+}
+
+.lGrid {
+    border-left: 6px solid blue;
+    height: 50px;
+}
+
+.hGrid {
+    border-bottom: 6px solid red;
+    width: 50px;
+}
