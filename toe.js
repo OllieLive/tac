@@ -1,6 +1,7 @@
-console.log('hi');
+
 var xButton = document.querySelector('.x');
 var oButton = document.querySelector('.o');
+var ticBox = document.getElementById('#ticBox');
 console.log(xButton);
 
 var a1 = document.querySelector('#a1');
@@ -14,6 +15,21 @@ var c2 = document.querySelector('#c2');
 var c3 = document.querySelector('#c3');
 console.log(oButton); 
 $ (function () {
-  $("#x").draggable();
-  $("#o").draggable();
+  $("#x").draggable({revert: "invalid",
+  contaiment:"document",
+  helper: "clone",
+  cursor: "move"
+});
+  $("#o").draggable({
+    revert: "invalid",
+    contaiment: "document",
+    helper: "clone",
+    cursor: "move"
+  });
+ ticBox.droppable({
+   accept: "#ticBox",
+   classes: {
+     "ui-droppable-active": "custom-state-active"
+   }
+ })
 });
