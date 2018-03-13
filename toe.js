@@ -1,5 +1,6 @@
-var xButton = document.querySelector('.xButton');
-var oButton = document.querySelector('.oButton');
+console.log('hi');
+var xButton = document.querySelector('.x');
+var oButton = document.querySelector('.o');
 console.log(xButton);
 
 var a1 = document.querySelector('#a1');
@@ -13,6 +14,6 @@ var c2 = document.querySelector('#c2');
 var c3 = document.querySelector('#c3');
 console.log(oButton); 
 $ (function () {
-  $(xButton).draggable();
-  $(oButton).draggable();
+  $("#x").draggable();
+  $("#o").draggable();
 });
