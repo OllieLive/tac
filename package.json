@@ -1,0 +1,4 @@
+"scripts": {
+    "build": "webpack --progress --colors",
+    "dev": "nodemon client/server.js --exec babel-node"
+},
