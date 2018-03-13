@@ -6,59 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link rel="stylesheet" href="tac.css">
     <title>Tic Tac Toe</title>
 </head>
 
 <body>
-    <ul class="sideImage">
-        <span> 
-           <!-- <img class="xButton" id="xButton" src="img/tic_X.png" alt="X"> -->
-           <p class="playerone">Player one</p>  
-           <p class="x token">x</p>
+<ul class="sideImage" ondrop="drop(event)">
+<span draggable="true" >
+            <!-- <img class="xButton" id="xButton" src="img/tic_X.png" alt="X"> -->
+            <p class="playerone" >Player one</p>
+<p class="x token" id="x">x</p>
         </span>
-        <span>
+        <span draggable="true">
             <!-- <img class="oButton" id="oButton" src="img/tic_O.png" alt="O"> -->
-            <p class="playertwo">Player two</p>  
-            <p class="o token">o</p>
+            <p class="playertwo">Player two</p>
+            <p class="o token" id="o">o</p>
         </span>
     </ul>
     <div class="ticTable">
         <div>
-            <span class="a1 line hGrid" id="a1">
-            <!-- <img src="img/tic_O.png" alt="O"> -->
-            </span>
-            <span class="a2 line hGrid lGrid" id="a2">
-                <!-- <img src="img/tic_O.png" alt="O"> -->
-            </span>
-            <span class="a3 line  hGrid lGrid" id="a3">
-                <!-- <img src="img/tic_O.png" alt="O"> -->
-            </span>
+            <table class="ticBox">
+                <tr>
+                    <th class="a1" id="a1">a1</th>
+                    <th class="a2" id="a2">2</th>
+                    <th class="a3" id="a3">3</th>
+                </tr>
+                <tr>
+                    <th class="b1" id="b1">4</th>
+                    <th class="b2" id="b2">5</th>
+                    <th class="b3" id="b3">6</th>
+                </tr>
+                <tr>
+                    <th class="c1" id="c1">7</th>
+                    <th class="c2" id="c2">8</th>
+                    <th class="c3" id="c3">9</th>
+                </tr>
+            </table>
         </div>
-        <div>
-            <span class="b1 line hGrid" id="b1">
-                <!-- <img src="img/tic_O.png" alt="O"> -->
-            </span>
-            <span class="b2 line hGrid lGrid" id="b2">
-                <!-- <img src="img/tic_O.png" alt="O"> -->
-            </span>
-            <span class="b3 line hGrid lGrid" id="b3">
-                <!-- <img src="img/tic_O.png" alt="O"> -->
-            </span>
-        </div>
-        <div>
-            <span class="c1 line" id="c1">
-                <!-- <img src="img/tic_O.png" alt="O"> -->
-            </span>
-            <span class="c2 line lGrid" id="c2">
-                <!-- <img src="img/tic_O.png" alt="O"> -->
-            </span>
-            <span class="c3 line lGrid" id="c3">
-                <!-- <img src="img/tic_O.png" alt="O"> -->
-            </span>
-        </div>
+
     </div>
 
 
