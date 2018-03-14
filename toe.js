@@ -20,16 +20,22 @@ $ (function () {
   helper: "clone",
   cursor: "move"
 });
+$("#ticBox").droppable({activeClass: "ui-state-default",
+    hoverClass: "ui-state-hover",
+    drop: function (event, ui) {
+      var newClone = $(ui.helper).clone();
+      $(this).after(newClone);}})
   $("#o").draggable({
     revert: "invalid",
-    contaiment: "document",
     helper: "clone",
     cursor: "move"
   });
- ticBox.droppable({
-   accept: "#ticBox",
-   classes: {
-     "ui-droppable-active": "custom-state-active"
-   }
- })
+  $("#ticBox").droppable({
+    activeClass: "ui-state-default",
+    hoverClass: "ui-state-hover",
+    drop: function (event, ui) {
+      var newClone = $(ui.helper).clone();
+      $(this).after(newClone);
+    }
+  })
 });
